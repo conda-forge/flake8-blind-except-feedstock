@@ -1,6 +1,6 @@
 {% set name = "flake8-blind-except" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "aca3356633825544cec51997260fe31a8f24a1a2795ce8e81696b9916745e599" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "02a860a1a19cb602c006a3fe0778035b0d14d3f57929b4b798bc7d6684f204e5" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,8 +33,8 @@ about:
   home: https://github.com/elijahandrews/flake8-blind-except
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'A flake8 extension that checks for blind, catch-all except statements'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: A flake8 extension that checks for blind, catch-all except statements
   description: |
     A flake8 extension that checks for blind, catch-all except statements
   doc_url: https://github.com/elijahandrews/flake8-blind-except
