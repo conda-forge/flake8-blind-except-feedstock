@@ -151,5 +151,6 @@ Feedstock Maintainers
 =====================
 
 * [@cshaley](https://github.com/cshaley/)
+* [@maresb](https://github.com/maresb/)
 * [@sannykr](https://github.com/sannykr/)
 
