@@ -19,10 +19,9 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - pep8
 
 test:
